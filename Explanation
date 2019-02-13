@@ -1,0 +1,73 @@
+Spring Boot + JPA + ManyToOne + Json input + Postman
+-----------------------------------------------------
+
+Use this json files for test.
+
+Use Postman to test this.
+
+In application.properties give your credentials.
+
+If you dont know about post man please watch youtube tutorial about that. That will take only 5 to 10 minutes. It is very useful.
+
+Model or Entites are very important in one-to-many and many-to-one relation ship
+
+The controller shows some Supptess error but leave it.
+
+
+============ Add Bill ===========
+---------------------------------
+
+{
+	"billDetail" : {
+		"billName":"Main", 
+		"billDate":"2019/06/10",
+		"billTotal": "1000"
+	},	
+
+	"billItems" : [{
+			"billItem" : "One",
+			"billItemQty" : "20",
+			"billItemRate" : "100"
+		},
+
+		{
+			"billItem" : "Two",
+			"billItemQty" : "1200",
+			"billItemRate" : "100"
+	},
+	{
+			"billItem" : "Three",
+			"billItemQty" : "1200",
+			"billItemRate" : "100"
+	}]
+}
+
+
+========== Update Bill ==========
+---------------------------------
+
+{
+	"billDetail" : {
+		"billId" : "12"
+		"billName":"Main", 
+		"billDate":"2019/06/10",
+		"billTotal": "1000"
+	},	
+
+	"billItems" : [{
+			"billItem" : "One",
+			"billItemQty" : "20",
+			"billItemRate" : "100"
+		},
+
+		{
+			"billItem" : "Two",
+			"billItemQty" : "1200",
+			"billItemRate" : "100"
+	},
+	{
+			"billItem" : "Three",
+			"billItemQty" : "1200",
+			"billItemRate" : "100"
+	}]
+}
